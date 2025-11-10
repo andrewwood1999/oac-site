@@ -3,94 +3,98 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Donate · Ocean Ambassadors Canada</title>
+  <title>Donate | Ocean Ambassadors Canada</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
+    html { scroll-behavior: smooth; }
     body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #043C5A; }
   </style>
 </head>
 <body class="text-slate-800">
 
-  <!-- include HEADER here -->
-
-  <main>
-
-    <!-- Page hero -->
-    <section class="relative text-white min-h-[50vh] flex items-center justify-center overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=2400&auto=format&fit=crop"
-           alt="Moody Pacific Northwest coastline"
-           class="absolute inset-0 w-full h-full object-cover opacity-60" />
-      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-      <div class="relative z-10 max-w-3xl text-center px-6">
-        <h1 class="text-4xl md:text-5xl font-extrabold">Support Ocean Ambassadors</h1>
-        <p class="mt-4 text-white/90">
-          Your support puts young people on the water,
-          funds shoreline cleanups, and keeps plastic out of our ocean.
-        </p>
-      </div>
-    </section>
-
-    <!-- Ways to support -->
-    <section class="max-w-5xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-10 text-sm leading-relaxed">
-      <div>
-        <h2 class="text-lg font-bold mb-2 text-[#043C5A]">Donate</h2>
-        <p class="text-slate-700">
-          Make a tax-receiptable donation via CanadaHelps.
-          Your gift funds access, gear, safety training, and program delivery.
-        </p>
-        <a href="#" class="inline-block mt-4 bg-[#043C5A] text-white font-semibold px-5 py-3 rounded-full hover:bg-slate-800">
-          Donate Now
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+      <a href="index.html" class="text-2xl font-bold text-[#2f4d99] hover:underline">
+        Ocean Ambassadors
+      </a>
+      <nav class="flex flex-wrap gap-6 text-sm font-semibold text-[#2f4d99]">
+        <a href="programs.html" class="hover:underline">Programs</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="impact.html" class="hover:underline">Impact</a>
+        <a href="partners.html" class="hover:underline">Partners</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+        <a href="donate.html"
+           class="border border-slate-300 rounded-full px-4 py-2 hover:bg-slate-100 transition text-[#2f4d99]">
+          Donate
         </a>
-      </div>
+      </nav>
+    </div>
+  </header>
 
-      <div>
-        <h2 class="text-lg font-bold mb-2 text-[#043C5A]">Sponsor</h2>
-        <p class="text-slate-700">
-          Sponsor a class, subsidize camp spots, or underwrite zero-waste work
-          in your municipality or business district.
-        </p>
-        <a href="contact.html" class="inline-block mt-4 border border-slate-300 rounded-full px-5 py-3 font-semibold text-[#043C5A] hover:bg-slate-100">
-          Talk to Us
-        </a>
-      </div>
+  <!-- Hero -->
+  <section class="relative text-white py-32 overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=2400&auto=format&fit=crop"
+         alt="Moody Pacific Northwest coastline"
+         class="absolute inset-0 w-full h-full object-cover opacity-60" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-transparent"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Support Ocean Ambassadors</h1>
+      <p class="text-lg text-white/90">
+        Your gift helps youth experience the ocean, learn stewardship, and lead change in their communities.
+      </p>
+    </div>
+  </section>
 
-      <div>
-        <h2 class="text-lg font-bold mb-2 text-[#043C5A]">Volunteer / In-kind</h2>
-        <p class="text-slate-700">
-          Lend equipment, boats, shore access, pro services, or people power.
-          Help us run cleanups, on-water safety, and shoreline education.
-        </p>
-        <a href="contact.html" class="inline-block mt-4 border border-slate-300 rounded-full px-5 py-3 font-semibold text-[#043C5A] hover:bg-slate-100">
-          Get Involved
-        </a>
-      </div>
-    </section>
+  <!-- Ways to Give -->
+  <section class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-12 text-sm leading-relaxed">
+    <div>
+      <h2 class="text-lg font-bold mb-2 text-[#043C5A]">Donate</h2>
+      <p class="text-slate-700">
+        Make a secure online donation to fund programming, equipment, and scholarships for participants
+        who might not otherwise access ocean experiences.
+      </p>
+      <a href="#"
+         class="inline-block mt-4 bg-[#2f4d99] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#043C5A] transition">
+        Give via CanadaHelps
+      </a>
+      <p class="mt-2 text-[11px] text-slate-500">
+        Replace this link with your actual CanadaHelps / donation page URL.
+      </p>
+    </div>
 
-  </main>
+    <div>
+      <h2 class="text-lg font-bold mb-2 text-[#043C5A]">Sponsorship</h2>
+      <p class="text-slate-700">
+        Sponsor a class, camp spots, or a full season of zero-waste education. We’ll work with you to
+        align impact with your organization’s sustainability goals.
+      </p>
+      <a href="contact.html"
+         class="inline-block mt-4 border border-slate-300 rounded-full px-6 py-3 font-semibold text-[#2f4d99] hover:bg-slate-100">
+        Discuss sponsorship
+      </a>
+    </div>
 
-  <!-- include FOOTER here -->
+    <div>
+      <h2 class="text-lg font-bold mb-2 text-[#043C5A]">Volunteer & In-kind</h2>
+      <p class="text-slate-700">
+        Offer time, equipment, services, or access that helps us deliver safe, inspiring ocean programs.
+      </p>
+      <a href="contact.html"
+         class="inline-block mt-4 border border-slate-300 rounded-full px-6 py-3 font-semibold text-[#2f4d99] hover:bg-slate-100">
+        Get involved
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-white border-t border-slate-200 py-10 text-center text-sm text-slate-500">
+    <p>© <span id="year"></span> Ocean Ambassadors Canada · Registered Not-for-Profit</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 
 </body>
-  <!-- Header (menu bar only) -->
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
-  <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
-    <a href="index.html" class="text-2xl font-bold text-[#2f4d99] hover:underline">
-      Ocean Ambassadors
-    </a>
-    <nav class="flex flex-wrap gap-6 text-sm font-semibold text-[#2f4d99]">
-      <a href="programs.html" class="hover:underline">Programs</a>
-      <a href="about.html" class="hover:underline">About</a>
-      <a href="impact.html" class="hover:underline">Impact</a>
-      <a href="partners.html" class="hover:underline">Partners</a>
-      <a href="contact.html" class="hover:underline">Contact</a>
-      <a href="donate.html"
-         class="border border-slate-300 rounded-full px-4 py-2 hover:bg-slate-100 transition text-[#2f4d99]">
-        Donate
-      </a>
-    </nav>
-  </div>
-</header>
-
 </html>
+
+
 
