@@ -3,81 +3,83 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Partners · Ocean Ambassadors Canada</title>
+  <title>Partners | Ocean Ambassadors Canada</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
+    html { scroll-behavior: smooth; }
     body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #043C5A; }
   </style>
 </head>
 <body class="text-slate-800">
 
-  <!-- include HEADER here -->
-
-  <main>
-
-    <!-- Page hero -->
-    <section class="relative text-white min-h-[50vh] flex items-center justify-center overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1577046125279-1cbf2d77f9e9?q=80&w=2400&auto=format&fit=crop"
-           alt="Rocky PNW shoreline with swell"
-           class="absolute inset-0 w-full h-full object-cover opacity-60" />
-      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-      <div class="relative z-10 max-w-3xl text-center px-6">
-        <h1 class="text-4xl md:text-5xl font-extrabold">Community Partners</h1>
-        <p class="mt-4 text-white/90">
-          We work alongside municipalities, districts, schools, and local businesses
-          to reduce plastic and build a culture of ocean stewardship.
-        </p>
-      </div>
-    </section>
-
-    <!-- Partners strip -->
-    <section class="max-w-6xl mx-auto px-6 py-20 text-center">
-      <div class="flex flex-wrap justify-center gap-6 text-[#043C5A] text-base font-semibold">
-        <span>Metro Vancouver</span>
-        <span>City of North Vancouver</span>
-        <span>District of West Vancouver</span>
-        <span>York Region</span>
-        <span>Local Schools</span>
-        <span>Industry Sponsors</span>
-      </div>
-
-      <p class="mt-12 text-slate-600 max-w-3xl mx-auto text-sm leading-relaxed">
-        Want to work with us on zero-waste programs, shoreline experiences,
-        or corporate stewardship days? We build custom activations and education
-        aligned with your sustainability goals.
-      </p>
-
-      <a href="contact.html"
-         class="inline-block mt-8 border border-slate-300 rounded-full px-6 py-3 font-semibold text-[#043C5A] hover:bg-slate-100">
-        Start a conversation
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+      <a href="index.html" class="text-2xl font-bold text-[#2f4d99] hover:underline">
+        Ocean Ambassadors
       </a>
-    </section>
+      <nav class="flex flex-wrap gap-6 text-sm font-semibold text-[#2f4d99]">
+        <a href="programs.html" class="hover:underline">Programs</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="impact.html" class="hover:underline">Impact</a>
+        <a href="partners.html" class="hover:underline">Partners</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+        <a href="donate.html"
+           class="border border-slate-300 rounded-full px-4 py-2 hover:bg-slate-100 transition text-[#2f4d99]">
+          Donate
+        </a>
+      </nav>
+    </div>
+  </header>
 
-  </main>
+  <!-- Hero -->
+  <section class="relative text-white py-32 overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1577046125279-1cbf2d77f9e9?q=80&w=2400&auto=format&fit=crop"
+         alt="Waves on a rocky Pacific Northwest shoreline"
+         class="absolute inset-0 w-full h-full object-cover opacity-60" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-transparent"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Partners & Supporters</h1>
+      <p class="text-lg text-white/90">
+        Collaboration is at the heart of our impact.
+      </p>
+    </div>
+  </section>
 
-  <!-- include FOOTER here -->
+  <!-- Partners -->
+  <section class="max-w-6xl mx-auto px-6 py-20 text-center text-sm leading-relaxed">
+    <p class="text-slate-600 max-w-3xl mx-auto mb-10">
+      We work with municipalities, school districts, community organizations, and businesses
+      to deliver ocean literacy and zero-waste initiatives.
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-6 text-base font-semibold text-[#043C5A]">
+      <span>Metro Vancouver</span>
+      <span>City of North Vancouver</span>
+      <span>District of West Vancouver</span>
+      <span>York Region</span>
+      <span>Local Schools</span>
+      <span>Community Sponsors</span>
+    </div>
+
+    <p class="mt-12 text-slate-600 max-w-3xl mx-auto">
+      Interested in partnering on shoreline education, youth programs, or plastic reduction
+      in your community or organization?
+    </p>
+    <a href="contact.html"
+       class="inline-block mt-6 border border-slate-300 rounded-full px-6 py-3 font-semibold text-[#2f4d99] hover:bg-slate-100">
+      Start a conversation
+    </a>
+  </section>
+
+  <footer class="bg-white border-t border-slate-200 py-10 text-center text-sm text-slate-500">
+    <p>© <span id="year"></span> Ocean Ambassadors Canada · Registered Not-for-Profit</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 
 </body>
-  <!-- Header (menu bar only) -->
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
-  <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
-    <a href="index.html" class="text-2xl font-bold text-[#2f4d99] hover:underline">
-      Ocean Ambassadors
-    </a>
-    <nav class="flex flex-wrap gap-6 text-sm font-semibold text-[#2f4d99]">
-      <a href="programs.html" class="hover:underline">Programs</a>
-      <a href="about.html" class="hover:underline">About</a>
-      <a href="impact.html" class="hover:underline">Impact</a>
-      <a href="partners.html" class="hover:underline">Partners</a>
-      <a href="contact.html" class="hover:underline">Contact</a>
-      <a href="donate.html"
-         class="border border-slate-300 rounded-full px-4 py-2 hover:bg-slate-100 transition text-[#2f4d99]">
-        Donate
-      </a>
-    </nav>
-  </div>
-</header>
-
 </html>
+
+
 
