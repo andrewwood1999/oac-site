@@ -3,88 +3,84 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Impact · Ocean Ambassadors Canada</title>
+  <title>Impact | Ocean Ambassadors Canada</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
+    html { scroll-behavior: smooth; }
     body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #043C5A; }
   </style>
 </head>
 <body class="text-slate-800">
 
-  <!-- include HEADER here -->
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+      <a href="index.html" class="text-2xl font-bold text-[#2f4d99] hover:underline">
+        Ocean Ambassadors
+      </a>
+      <nav class="flex flex-wrap gap-6 text-sm font-semibold text-[#2f4d99]">
+        <a href="programs.html" class="hover:underline">Programs</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="impact.html" class="hover:underline">Impact</a>
+        <a href="partners.html" class="hover:underline">Partners</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+        <a href="donate.html"
+           class="border border-slate-300 rounded-full px-4 py-2 hover:bg-slate-100 transition text-[#2f4d99]">
+          Donate
+        </a>
+      </nav>
+    </div>
+  </header>
 
-  <main>
-
-    <!-- Page hero -->
-    <section class="relative text-white min-h-[50vh] flex items-center justify-center overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1549887534-3db1bd59dcca?q=80&w=2400&auto=format&fit=crop"
-           alt="Morning fog over calm PNW waters with paddleboarders"
-           class="absolute inset-0 w-full h-full object-cover opacity-60" />
-      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-      <div class="relative z-10 max-w-3xl text-center px-6">
-        <h1 class="text-4xl md:text-5xl font-extrabold">Our Impact</h1>
-        <p class="mt-4 text-white/90">
-          We don’t just talk about ocean stewardship — we measure it.
-        </p>
-      </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="max-w-6xl mx-auto px-6 py-20 text-center text-[#043C5A]">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
-        <div>
-          <div class="text-4xl font-extrabold">10,000+</div>
-          <p class="text-slate-600 text-sm">Students Engaged</p>
-        </div>
-        <div>
-          <div class="text-4xl font-extrabold">150+</div>
-          <p class="text-slate-600 text-sm">Programs Delivered</p>
-        </div>
-        <div>
-          <div class="text-4xl font-extrabold">25+</div>
-          <p class="text-slate-600 text-sm">Community Partners</p>
-        </div>
-        <div>
-          <div class="text-4xl font-extrabold">1000s</div>
-          <p class="text-slate-600 text-sm">KG of Debris Prevented</p>
-        </div>
-      </div>
-
-      <p class="mt-16 italic text-slate-700 max-w-3xl mx-auto">
-        “A transformative learning experience for students — fun, educational,
-        and deeply inspiring.”
-        <br>
-        <span class="not-italic text-slate-500">
-          — Highlands Elementary
-        </span>
+  <!-- Hero -->
+  <section class="relative text-white py-32 overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1549887534-3db1bd59dcca?q=80&w=2400&auto=format&fit=crop"
+         alt="Foggy PNW waters with paddlers"
+         class="absolute inset-0 w-full h-full object-cover opacity-60" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-transparent"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Our Impact</h1>
+      <p class="text-lg text-white/90">
+        Turning ocean experiences into lasting stewardship and measurable change.
       </p>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <!-- Stats -->
+  <section class="max-w-6xl mx-auto px-6 py-20 text-center">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-[#043C5A]">
+      <div>
+        <div class="text-4xl font-extrabold">10,000+</div>
+        <p class="text-slate-600 text-sm mt-1">Students Engaged</p>
+      </div>
+      <div>
+        <div class="text-4xl font-extrabold">150+</div>
+        <p class="text-slate-600 text-sm mt-1">Programs Delivered</p>
+      </div>
+      <div>
+        <div class="text-4xl font-extrabold">25+</div>
+        <p class="text-slate-600 text-sm mt-1">Community Partners</p>
+      </div>
+      <div>
+        <div class="text-4xl font-extrabold">1000s</div>
+        <p class="text-slate-600 text-sm mt-1">KG of Debris Prevented</p>
+      </div>
+    </div>
 
-  <!-- include FOOTER here -->
+    <p class="mt-16 italic text-slate-700 max-w-3xl mx-auto">
+      “A transformative learning experience for students — fun, educational, and deeply inspiring.”
+      <br><span class="not-italic text-slate-500">— Teacher, Highlands Elementary</span>
+    </p>
+  </section>
+
+  <footer class="bg-white border-t border-slate-200 py-10 text-center text-sm text-slate-500">
+    <p>© <span id="year"></span> Ocean Ambassadors Canada · Registered Not-for-Profit</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 
 </body>
-  <!-- Header (menu bar only) -->
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
-  <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
-    <a href="index.html" class="text-2xl font-bold text-[#2f4d99] hover:underline">
-      Ocean Ambassadors
-    </a>
-    <nav class="flex flex-wrap gap-6 text-sm font-semibold text-[#2f4d99]">
-      <a href="programs.html" class="hover:underline">Programs</a>
-      <a href="about.html" class="hover:underline">About</a>
-      <a href="impact.html" class="hover:underline">Impact</a>
-      <a href="partners.html" class="hover:underline">Partners</a>
-      <a href="contact.html" class="hover:underline">Contact</a>
-      <a href="donate.html"
-         class="border border-slate-300 rounded-full px-4 py-2 hover:bg-slate-100 transition text-[#2f4d99]">
-        Donate
-      </a>
-    </nav>
-  </div>
-</header>
-
 </html>
+
+
 
