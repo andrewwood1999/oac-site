@@ -3,97 +3,94 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About · Ocean Ambassadors Canada</title>
+  <title>About | Ocean Ambassadors Canada</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
+    html { scroll-behavior: smooth; }
     body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #043C5A; }
   </style>
 </head>
 <body class="text-slate-800">
 
-  <!-- include HEADER here -->
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+      <a href="index.html" class="text-2xl font-bold text-[#2f4d99] hover:underline">
+        Ocean Ambassadors
+      </a>
+      <nav class="flex flex-wrap gap-6 text-sm font-semibold text-[#2f4d99]">
+        <a href="programs.html" class="hover:underline">Programs</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="impact.html" class="hover:underline">Impact</a>
+        <a href="partners.html" class="hover:underline">Partners</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+        <a href="donate.html"
+           class="border border-slate-300 rounded-full px-4 py-2 hover:bg-slate-100 transition text-[#2f4d99]">
+          Donate
+        </a>
+      </nav>
+    </div>
+  </header>
 
-  <main>
-
-    <!-- Page hero -->
-    <section class="relative text-white min-h-[50vh] flex items-center justify-center overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1584149164123-1e66dc72e6b3?q=80&w=2400&auto=format&fit=crop"
-           alt="Paddleboarders exploring Howe Sound"
-           class="absolute inset-0 w-full h-full object-cover opacity-60" />
-      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-      <div class="relative z-10 max-w-3xl text-center px-6">
-        <h1 class="text-4xl md:text-5xl font-extrabold">About Us</h1>
-        <p class="mt-4 text-white/90">
-          Ocean Ambassadors Canada is a not-for-profit connecting people to the ocean
-          and empowering them to protect it.
-        </p>
-      </div>
-    </section>
-
-    <!-- Mission -->
-    <section class="max-w-4xl mx-auto px-6 py-16 text-center text-[#043C5A]">
-      <p class="text-xl font-semibold">
-        We believe that if you love the ocean, you’ll fight for it.
+  <!-- Hero -->
+  <section class="relative text-white py-32 overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1584149164123-1e66dc72e6b3?q=80&w=2400&auto=format&fit=crop"
+         alt="Paddleboarders on calm coastal water"
+         class="absolute inset-0 w-full h-full object-cover opacity-60" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-transparent"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">About Us</h1>
+      <p class="text-lg text-white/90">
+        We connect people with the ocean through hands-on experiences that inspire stewardship.
       </p>
-      <p class="mt-4 text-slate-600">
-        We deliver hands-on ocean literacy, plastic pollution education,
-        and zero-waste action in coastal communities. Our work happens
-        on beaches, docks, and paddleboards — not just in classrooms.
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="max-w-5xl mx-auto px-6 py-16 text-center">
+    <p class="text-xl font-semibold text-[#043C5A]">
+      If you fall in love with the ocean, you’ll fight to protect it.
+    </p>
+    <p class="mt-4 text-slate-600 leading-relaxed">
+      Ocean Ambassadors Canada is a not-for-profit organization based in British Columbia.
+      We use beaches, docks, paddleboards, and coastal ecosystems as our classroom to teach
+      ocean literacy, plastic pollution solutions, and zero waste habits.
+    </p>
+  </section>
+
+  <!-- Credibility / Structure -->
+  <section class="max-w-6xl mx-auto px-6 pb-24 grid md:grid-cols-3 gap-10 text-sm leading-relaxed">
+    <div>
+      <h2 class="text-lg font-bold mb-2 text-[#043C5A]">Patronage</h2>
+      <p class="text-slate-700">
+        Honoured to receive the Distinguished Patronage of the Lieutenant Governor of British Columbia,
+        recognizing our commitment to youth, education, and ocean health.
       </p>
-    </section>
+    </div>
+    <div>
+      <h2 class="text-lg font-bold mb-2 text-[#043C5A]">Team & Governance</h2>
+      <p class="text-slate-700">
+        Guided by founders, a volunteer Board of Directors, educators, and honorary ambassadors
+        who bring expertise in paddling, education, conservation, and community engagement.
+      </p>
+    </div>
+    <div>
+      <h2 class="text-lg font-bold mb-2 text-[#043C5A]">Not-for-Profit</h2>
+      <p class="text-slate-700">
+        Ocean Ambassadors Canada is a registered Canadian not-for-profit.
+        Donations and sponsorships directly support programming and access.
+      </p>
+    </div>
+  </section>
 
-    <!-- Credibility / Structure -->
-    <section class="max-w-5xl mx-auto px-6 pb-24 grid md:grid-cols-3 gap-10 text-sm leading-relaxed">
-      <div>
-        <h2 class="text-lg font-bold mb-2 text-[#043C5A]">Patronage</h2>
-        <p class="text-slate-700">
-          We are honoured to have the Distinguished Patronage of the
-          Lieutenant Governor of British Columbia.
-        </p>
-      </div>
-      <div>
-        <h2 class="text-lg font-bold mb-2 text-[#043C5A]">Team & Governance</h2>
-        <p class="text-slate-700">
-          Our Founders, Board of Directors, program leaders, and
-          Honorary Ambassadors are united by a commitment to ocean health,
-          youth leadership, and community impact.
-        </p>
-      </div>
-      <div>
-        <h2 class="text-lg font-bold mb-2 text-[#043C5A]">Status</h2>
-        <p class="text-slate-700">
-          Ocean Ambassadors Canada is a registered Canadian not-for-profit.
-          Donations and sponsorships directly support programming,
-          access, and ocean stewardship.
-        </p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- include FOOTER here -->
+  <footer class="bg-white border-t border-slate-200 py-10 text-center text-sm text-slate-500">
+    <p>© <span id="year"></span> Ocean Ambassadors Canada · Registered Not-for-Profit</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 
 </body>
-  <!-- Header (menu bar only) -->
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
-  <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
-    <a href="index.html" class="text-2xl font-bold text-[#2f4d99] hover:underline">
-      Ocean Ambassadors
-    </a>
-    <nav class="flex flex-wrap gap-6 text-sm font-semibold text-[#2f4d99]">
-      <a href="programs.html" class="hover:underline">Programs</a>
-      <a href="about.html" class="hover:underline">About</a>
-      <a href="impact.html" class="hover:underline">Impact</a>
-      <a href="partners.html" class="hover:underline">Partners</a>
-      <a href="contact.html" class="hover:underline">Contact</a>
-      <a href="donate.html"
-         class="border border-slate-300 rounded-full px-4 py-2 hover:bg-slate-100 transition text-[#2f4d99]">
-        Donate
-      </a>
-    </nav>
-  </div>
-</header>
-
 </html>
+
+
 
