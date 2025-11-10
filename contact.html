@@ -8,17 +8,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
     html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; background-color: white; color: #043C5A; }
-    .nav-link:hover { text-decoration: underline; }
+    body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #043C5A; }
   </style>
 </head>
 <body class="text-slate-800">
 
   <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
-      <a href="index.html" class="flex items-center gap-3">
-        <img src="OAC-Logo-rgb.png" alt="Ocean Ambassadors Canada" class="h-8 w-auto" />
+      <a href="index.html" class="text-2xl font-bold text-[#2f4d99] hover:underline">
+        Ocean Ambassadors
       </a>
       <nav class="flex flex-wrap gap-6 text-sm font-semibold text-[#2f4d99]">
         <a href="programs.html" class="hover:underline">Programs</a>
@@ -34,22 +33,65 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative text-white py-36 overflow-hidden">
+  <!-- Hero -->
+  <section class="relative text-white py-32 overflow-hidden">
     <img src="https://images.unsplash.com/photo-1611601187354-ff4b60c2e1d4?q=80&w=2400&auto=format&fit=crop"
-         alt="Driftwood and mist on a PNW beach"
+         alt="Driftwood on a misty PNW beach"
          class="absolute inset-0 w-full h-full object-cover opacity-60" />
-    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
-      <h1 class="text-5xl font-extrabold mb-4">Get in Touch</h1>
-      <p class="text-lg text-white/90 max-w-2xl mx-auto">
-        Have questions about our programs, partnerships, or volunteering opportunities?  
-        We’d love to hear from you.
+    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-transparent"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Get in Touch</h1>
+      <p class="text-lg text-white/90">
+        Questions about programs, partnerships, or volunteering? We’d love to hear from you.
       </p>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="py-20 bg-white text-center">
-    <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-8 text-[#043C5A]"
+  <!-- Contact Info + Form -->
+  <section class="max-w-5xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-start text-sm">
+    <div>
+      <h2 class="text-xl font-bold mb-4 text-[#043C5A]">Contact Details</h2>
+      <p class="text-slate-700 mb-3">
+        <strong>Email:</strong>
+        <a href="mailto:info@oceanambassadorscanada.org" class="text-[#2f4d99] hover:underline">
+          info@oceanambassadorscanada.org
+        </a>
+      </p>
+      <p class="text-slate-700 mb-3">
+        <strong>Instagram:</strong>
+        <a href="https://www.instagram.com/oceanambassadorscanada" target="_blank" class="text-[#2f4d99] hover:underline">
+          @oceanambassadorscanada
+        </a>
+      </p>
+      <p class="text-slate-600">
+        For school bookings, please include your school name, grade(s), approximate number of students, and preferred dates.
+      </p>
+    </div>
+
+    <!-- Static form (you can wire this up later with Formspree or similar) -->
+    <form class="space-y-4">
+      <input type="text" placeholder="Your Name" required
+             class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#2f4d99]" />
+      <input type="email" placeholder="Your Email" required
+             class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#2f4d99]" />
+      <textarea placeholder="Your Message" rows="4" required
+             class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#2f4d99]"></textarea>
+      <button type="button"
+              class="bg-[#2f4d99] text-white px-6 py-3 rounded-full hover:bg-[#043C5A] transition">
+        Send Message (enable via email service)
+      </button>
+      <p class="text-[11px] text-slate-500">
+        This form is visual only on GitHub Pages. To make it send emails, connect it to a service like Formspree or Netlify Forms.
+      </p>
+    </form>
+  </section>
+
+  <footer class="bg-white border-t border-slate-200 py-10 text-center text-sm text-slate-500">
+    <p>© <span id="year"></span> Ocean Ambassadors Canada · Registered Not-for-Profit</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
+
+
