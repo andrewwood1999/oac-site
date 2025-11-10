@@ -1,19 +1,125 @@
-<!-- Header (menu bar only) -->
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
-  <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
-    <a href="index.html" class="text-2xl font-bold text-[#2f4d99] hover:underline">
-      Ocean Ambassadors
-    </a>
-    <nav class="flex flex-wrap gap-6 text-sm font-semibold text-[#2f4d99]">
-      <a href="programs.html" class="hover:underline">Programs</a>
-      <a href="about.html" class="hover:underline">About</a>
-      <a href="impact.html" class="hover:underline">Impact</a>
-      <a href="partners.html" class="hover:underline">Partners</a>
-      <a href="contact.html" class="hover:underline">Contact</a>
-      <a href="donate.html"
-         class="border border-slate-300 rounded-full px-4 py-2 hover:bg-slate-100 transition text-[#2f4d99]">
-        Donate
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ocean Ambassadors Canada</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #043C5A; }
+  </style>
+</head>
+<body class="text-slate-800">
+
+  <!-- Header (menu bar) -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+      <a href="index.html" class="text-2xl font-bold text-[#2f4d99] hover:underline">
+        Ocean Ambassadors
       </a>
-    </nav>
-  </div>
-</header>
+      <nav class="flex flex-wrap gap-6 text-sm font-semibold text-[#2f4d99]">
+        <a href="programs.html" class="hover:underline">Programs</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="impact.html" class="hover:underline">Impact</a>
+        <a href="partners.html" class="hover:underline">Partners</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+        <a href="donate.html"
+           class="border border-slate-300 rounded-full px-4 py-2 hover:bg-slate-100 transition text-[#2f4d99]">
+          Donate
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative text-white h-screen flex items-center justify-center overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=2400&auto=format&fit=crop"
+         alt="Misty Pacific Northwest coastline with rugged rocks and tall trees"
+         class="absolute inset-0 w-full h-full object-cover opacity-60" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+    <div class="relative z-10 text-center px-6 max-w-3xl">
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+        Connect people with the ocean. Empower them to care for it.
+      </h1>
+      <p class="mt-6 text-lg text-white/90">
+        Immersive education, action-based learning, and real connections to the sea.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="programs.html"
+           class="bg-white text-black font-semibold px-6 py-3 rounded-full hover:bg-slate-200 transition">
+          Explore Programs
+        </a>
+        <a href="donate.html"
+           class="border border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white/10 transition">
+          Support Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Preview -->
+  <section class="relative text-white py-24 overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1596484553771-3f826ccf8de5?q=80&w=2400&auto=format&fit=crop"
+         alt="Children exploring tidepools on a rocky PNW shore"
+         class="absolute inset-0 w-full h-full object-cover opacity-60" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-10">Our Programs</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+        <div class="bg-white/10 p-6 rounded-xl">
+          <h3 class="text-2xl font-semibold mb-2">School Field Trips</h3>
+          <p class="text-white/90">
+            Hands-on ocean literacy and paddleboarding experiences for Grades 5–8.
+          </p>
+        </div>
+        <div class="bg-white/10 p-6 rounded-xl">
+          <h3 class="text-2xl font-semibold mb-2">Summer Camps</h3>
+          <p class="text-white/90">
+            Adventure and stewardship all summer long in the PNW.
+          </p>
+        </div>
+        <div class="bg-white/10 p-6 rounded-xl">
+          <h3 class="text-2xl font-semibold mb-2">Zero Waste Initiatives</h3>
+          <p class="text-white/90">
+            Reducing single-use plastics and marine debris across coastal communities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Preview -->
+  <section class="relative py-24 overflow-hidden text-white">
+    <img src="https://images.unsplash.com/photo-1549887534-3db1bd59dcca?q=80&w=2400&auto=format&fit=crop"
+         alt="Morning fog over calm PNW waters with paddleboarders"
+         class="absolute inset-0 w-full h-full object-cover opacity-60" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-10">Our Impact</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div><div class="text-4xl font-extrabold">10,000+</div><p>Students Engaged</p></div>
+        <div><div class="text-4xl font-extrabold">150+</div><p>Programs Delivered</p></div>
+        <div><div class="text-4xl font-extrabold">25+</div><p>Community Partners</p></div>
+        <div><div class="text-4xl font-extrabold">1000s</div><p>KG Debris Prevented</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-10 text-center text-sm text-slate-500">
+    <p>© <span id="year"></span> Ocean Ambassadors Canada · Registered Not-for-Profit</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
